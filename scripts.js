@@ -22,7 +22,7 @@ window.addEventListener("load", function () {
   let currentHeight = document.getElementById("spaceShuttleHeight").innerHTML;
   let CH = Number(currentHeight);
   let moveV = 250;
-  let moveH = 0;
+  let moveH = 250;
 
   goUp.addEventListener("click", function (event) {
     moveV -= 10;
@@ -39,13 +39,13 @@ window.addEventListener("load", function () {
   });
 
   goLeft.addEventListener("click", function (event) {
-    moveH += 10;
-    rocket.style.marginRight = moveH + "px";
+    moveH -= 10;
+    rocket.style.marginLeft = moveH + "px";
   });
 
   goRight.addEventListener("click", function (event) {
-    moveH -= 10;
-    rocket.style.marginRight = moveH + "px";
+    moveH += 10;
+    rocket.style.marginLeft = moveH + "px";
   });
 
   let land = document.getElementById("landing");

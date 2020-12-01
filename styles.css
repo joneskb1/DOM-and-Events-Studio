@@ -7,4 +7,6 @@
 
 #rocket {
     margin-top: 250px;
+    position: absolute;
+    margin-left:250px;
 }
